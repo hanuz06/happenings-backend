@@ -14,6 +14,7 @@
     "@strapi/plugin-users-permissions": "4.1.12",
     "@strapi/provider-upload-cloudinary": "^4.1.12",
     "@strapi/strapi": "4.1.12",
+    "@strapi/utils": "^4.1.12",
     "better-sqlite3": "7.4.6",
     "slugify": "^1.6.5"
   },

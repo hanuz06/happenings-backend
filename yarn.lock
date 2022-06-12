@@ -1805,7 +1805,7 @@
     "statuses" "2.0.1"
     "uuid" "^3.3.2"
 
-"@strapi/utils@4.1.12":
+"@strapi/utils@^4.1.12", "@strapi/utils@4.1.12":
   "integrity" "sha512-s5qI3+5KOfaksl4DvY28F68KyfmJz9oeIIMEbGX03CtnXerejws1gDKVIuyxHNXsQL1MkgG0Ejsyl4l4Pb04eA=="
   "resolved" "https://registry.npmjs.org/@strapi/utils/-/utils-4.1.12.tgz"
   "version" "4.1.12"
