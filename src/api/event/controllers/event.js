@@ -85,16 +85,14 @@ module.exports = createCoreController("api::event.event", ({ strapi }) => ({
 
     const [events] = await strapi.db
       .query("api::event.event")
-      .findMany({ where: { id, "user.id": ctx.state.user.id } });
+      .findMany({ where: { id, user: ctx.state.user.id } });
 
     if (!events) {
       return ctx.unauthorized(`You can't update this entry`);
     }
 
     // const entity = await strapi.services.events.delete({ id });
-    const entity = await strapi.db
-      .query("api::event.event")
-      .delete({ where: { id } });
+    const entity = await strapi.db.query("api::event.event").delete({ where: { id } });
 
     // return sanitizeEntity(entity, { model: strapi.models.events });
     const sanitizedEntity = await sanitize.contentAPI.output(entity);
